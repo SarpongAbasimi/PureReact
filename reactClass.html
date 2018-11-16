@@ -11,10 +11,20 @@
   <!-- React library & ReactDOM-->
     <script src="https://unpkg.com/react@15.4.2/dist/react.js"></script> 
     <script src="https://unpkg.com/react-dom@15.4.2/dist/react-dom.js"></script>
+    
+    
     <script>
      // Pure React and JavaScript code
- 
+    const IngredientsList = React.createClass({ displayName: "IngredientsList",
+        render() {
+                return (React.createElement("ul", {"className": "ingredients"},
+                            React.createElement("li", null, "1 lb Salmon")) 
+                        );
+                 }
+                                              })
 
+    const list = React.createElement(IngredientsList, null, null)
+    ReactDOM.render(list,document.getElementById('react-container'))
     </script>
 
 

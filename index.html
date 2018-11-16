@@ -40,7 +40,7 @@
              'one','two','three'
          ]
 
-         var mapping = React.createElement ('ul',null,myArray.map(ele=>React.createElement('li',null,ele) ));
+         var mapping = React.createElement ('ul',null,myArray.map((ele,i)=>React.createElement('li',{key:i},ele) ));
 
 
 
