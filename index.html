@@ -32,14 +32,19 @@
         React.createElement('li',null,'This is the second Section'),
         )
         )
-
     );
+        
+         {/* Using array to map to pass ingredient to objects. */}
+
+         const myArray = [
+             'one','two','three'
+         ]
+
+         var mapping = React.createElement ('ul',null,myArray.map(ele=>React.createElement('li',null,ele) ));
 
 
 
-
-
-     ReactDOM.render(food, document.getElementById('react-container'));
+     ReactDOM.render(mapping, document.getElementById('react-container'));
     </script>
 
 
