@@ -18,7 +18,28 @@
      React.createElement('li',null,'This is my second li element using react'),
      React.createElement('li',null,'This is my third li element using react'),
      ) ;
-     ReactDOM.render(dish, document.getElementById('react-container'));
+     
+     {/* Creating multiple sections inside a React Conponent  */}
+     var food = React.createElement('section',{id:'name'},
+        React.createElement('h1',null,'Baked Salmon'),
+        React.createElement('ul',null,
+        React.createElement('li',null,'This is the first section'),
+        ),
+
+        React.createElement('section',null,
+        React.createElement('h1',null,'Baked '),
+        React.createElement('ul',null,
+        React.createElement('li',null,'This is the second Section'),
+        )
+        )
+
+    );
+
+
+
+
+
+     ReactDOM.render(food, document.getElementById('react-container'));
     </script>
 
 
