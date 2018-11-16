@@ -13,7 +13,11 @@
     <script src="https://unpkg.com/react-dom@15.4.2/dist/react-dom.js"></script>
     <script>
      // Pure React and JavaScript code
-     var dish = React.createElement("h5", null, "Baked Salmon") ;
+     var dish = React.createElement("ul", null, 
+     React.createElement('li',null,'This is my first li element using react'),
+     React.createElement('li',null,'This is my second li element using react'),
+     React.createElement('li',null,'This is my third li element using react'),
+     ) ;
      ReactDOM.render(dish, document.getElementById('react-container'));
     </script>
 
